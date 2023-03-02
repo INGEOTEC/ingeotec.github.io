@@ -1,7 +1,7 @@
 ---
 title:
 layout: default
-permalink: /teaching/
+permalink: /courses/
 published: true
 ---
 
@@ -11,7 +11,7 @@ published: true
 	<div class="gallery">
 
 
-  {% for project in site.teaching %}
+  {% for project in site.courses %}
 
   {% if project.redirect %}
   <div class="projectTile">

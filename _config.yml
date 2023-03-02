@@ -49,9 +49,9 @@ collections:
   software:
     output: true
     permalink: /software/:path/
-  teaching:
+  courses:
     output: true
-    permalink: /teaching/:path/
+    permalink: /courses/:path/
   
 
 sass:
