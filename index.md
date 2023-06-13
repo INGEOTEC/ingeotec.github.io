@@ -13,7 +13,7 @@ projects; this collaboration was framed under the INGEOTEC name. The founding
 members are:
 - [Daniela Moctezuma](https://scholar.google.com/citations?user=SbtmwwsAAAAJ&hl=es&oi=ao)
 - Elio Villaseñor
-- [Eric S. Tellez](https://sadit.github.io) [<i class="ai ai-google-scholar-square ai-3x"></i>](https://scholar.google.com/citations?user=6hmLQWsAAAAJ&hl=es&oi=ao)
+- [Eric S. Tellez](https://sadit.github.io) [<i class="ai ai-google-scholar-square"></i>](https://scholar.google.com/citations?user=6hmLQWsAAAAJ&hl=es&oi=ao)
 - [Mario Graff](https://scholar.google.com/citations?user=euNI6oEAAAAJ&hl=es), 
 - [Oscar S. Siordia](https://scholar.google.com/citations?user=E3azxIkAAAAJ&hl=es&oi=sra)
 - [Sabino Miranda Jiménez](https://scholar.google.com/citations?user=KSlujd4AAAAJ&hl=es)
