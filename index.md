@@ -11,7 +11,7 @@ In late 2014, researchers from [CentroGEO](http://www.centrogeo.org.mx)
 and [INFOTEC](http://infotec.mx) decided to work on interdisciplinary 
 projects; this collaboration was framed under the INGEOTEC name. The founding 
 members are:
-- [<i class="ai ai-google-scholar-square"></i>](https://scholar.google.com/citations?user=SbtmwwsAAAAJ&hl=es&oi=ao) Daniela Moctezuma
+- [<i class="ai ai-google-scholar-square"></i>](https://scholar.google.com/citations?user=SbtmwwsAAAAJ&hl=es&oi=ao) [Daniela Moctezuma](https://dmocteo.github.io/) 
 - [<i class="ai ai-google-scholar-square"></i>](https://scholar.google.com.mx/citations?user=N144SCkAAAAJ&hl=es) Elio Villaseñor
 - [<i class="ai ai-google-scholar-square"></i>](https://scholar.google.com/citations?user=6hmLQWsAAAAJ&hl=es&oi=ao) [Eric S. Tellez](https://sadit.github.io/) 
 - [<i class="ai ai-google-scholar-square"></i>](https://scholar.google.com/citations?user=euNI6oEAAAAJ&hl=es) [Mario Graff](https://mgraffg.github.io/)
