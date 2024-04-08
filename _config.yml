@@ -52,9 +52,9 @@ collections:
   courses:
     output: true
     permalink: /courses/:path/
-  talks:
+  talk:
     output: true
-    permalink: /talks/:path/
+    permalink: /talk/:path/
   
 
 sass:

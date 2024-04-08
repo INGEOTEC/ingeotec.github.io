@@ -1,7 +1,7 @@
 ---
 title:
 layout: default
-permalink: /talks/
+permalink: /talk/
 published: true
 ---
 
@@ -11,7 +11,7 @@ published: true
 	<div class="gallery">
 
 
-  {% for project in site.talks %}
+  {% for project in site.talk %}
 
   {% if project.redirect %}
   <div class="projectTile">
