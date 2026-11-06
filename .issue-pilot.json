@@ -1,0 +1,6 @@
+{
+  "test_command": "bundle exec jekyll build",
+  "base_branch": "main",
+  "model": "claude-opus-5-5",
+  "effort": "medium"
+}
