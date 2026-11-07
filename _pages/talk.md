@@ -1,45 +1,14 @@
 ---
-title:
+title: Talks
 layout: default
 permalink: /talk/
 published: true
 ---
 
-
-<div class="ProjectContainer">
-
-	<div class="gallery">
-
-
-  {% for project in site.talk %}
-
-  {% if project.redirect %}
-  <div class="projectTile">
-          <a href="{{ project.redirect }}" target="_blank">
-          <span>
-              <h2>{{ project.title }}</h2>
-              <br/>
-              <p>{{ project.description }}</p>
-          </span>
-          </a>
-  </div>
-
-  {% else %}
-
-  <div class="projectTile">
-          <a href="{{ project.url | prepend: site.baseurl | prepend: site.url }}">
-          <span>
-              <h2>{{ project.title }}</h2>
-              <br/>
-              <p>{{ project.description }}</p>
-          </span>
-          </a>
-  </div>
-
-  {% endif %}
-
-  {% endfor %}
-
-	</div>
-
+<div class="section-title">
+  <span class="section-tag">Talks</span>
+  <h2>Talks</h2>
 </div>
+<p class="section-desc">Presentations given by the group at conferences, international competitions and outreach events. The complete list is at <a href="https://ingeotec.github.io/talks/">ingeotec.github.io/talks</a>.</p>
+
+{% include card-grid.html items=site.talk %}

@@ -1,0 +1,19 @@
+{% comment %}
+  Renders a collection as a card grid: {% include card-grid.html items=site.software %}
+  Each item links to `redirect` (external) or to its own page, and shows
+  `title`, `description` and, when present, `badge` and `meta`.
+{% endcomment %}
+<div class="card-grid">
+  {% for item in include.items %}
+  {% if item.redirect %}
+  <a class="card" href="{{ item.redirect }}" target="_blank" rel="noopener">
+  {% else %}
+  <a class="card" href="{{ item.url | prepend: site.baseurl }}">
+  {% endif %}
+    {% if item.badge %}<span class="card__badge">{{ item.badge }}</span>{% endif %}
+    <h3>{{ item.title }}</h3>
+    {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+    {% if item.meta %}<span class="card__meta">{{ item.meta }}</span>{% endif %}
+  </a>
+  {% endfor %}
+</div>

@@ -11,11 +11,6 @@ url: "" #custom url to be used instead of GitHub repository
 highlighter: rouge
 markdown: kramdown
 
-# Pagination
-paginate: 4
-permalink: /blog/:year/:title/
-paginate_path: /blog/page:num/
-
 # Social media links in footer
 # facebook: "#"
 # twitter: "@mgraffg"
@@ -43,9 +38,6 @@ compress_html:
 
 #collection
 collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
   software:
     output: true
     permalink: /software/:path/
@@ -67,6 +59,7 @@ include:
 exclude:
   - README.md
   - LICENSE.md
+  - scripts
 
 plugins:
   - jekyll-seo-tag

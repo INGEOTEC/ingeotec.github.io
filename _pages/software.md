@@ -1,45 +1,14 @@
 ---
-title:
+title: Software
 layout: default
 permalink: /software/
 published: true
 ---
 
-
-<div class="ProjectContainer">
-
-	<div class="gallery">
-
-
-  {% for project in site.software %}
-
-  {% if project.redirect %}
-  <div class="projectTile">
-          <a href="{{ project.redirect }}" target="_blank">
-          <span>
-              <h2>{{ project.title }}</h2>
-              <br/>
-              <p>{{ project.description }}</p>
-          </span>
-          </a>
-  </div>
-
-  {% else %}
-
-  <div class="projectTile">
-          <a href="{{ project.url | prepend: site.baseurl | prepend: site.url }}">
-          <span>
-              <h2>{{ project.title }}</h2>
-              <br/>
-              <p>{{ project.description }}</p>
-          </span>
-          </a>
-  </div>
-
-  {% endif %}
-
-  {% endfor %}
-
-	</div>
-
+<div class="section-title">
+  <span class="section-tag">Open source</span>
+  <h2>Software</h2>
 </div>
+<p class="section-desc">Open-source libraries developed by the group for text classification, similarity search and the statistical comparison of algorithms.</p>
+
+{% include card-grid.html items=site.software %}

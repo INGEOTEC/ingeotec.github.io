@@ -1,0 +1,140 @@
+/* Section headers */
+.section-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin: 2.4rem 0 0.3rem 0;
+  border-bottom: 2px solid $border;
+  padding-bottom: 0.4rem;
+
+  &:first-child {
+    margin-top: 0.5rem;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .section-tag {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: $accent;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    border-color: $border-dark;
+  }
+}
+
+.section-desc {
+  color: $muted;
+  margin: 0 0 1.2rem 0;
+  font-size: 0.98rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: $muted-dark;
+  }
+}
+
+/* Card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 1.1rem;
+  margin-bottom: 1rem;
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $border;
+  border-radius: 10px;
+  padding: 1.1rem 1.2rem;
+  background: #ffffff;
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 1px 2px rgba(15, 41, 66, 0.04);
+  transition: box-shadow 0.15s ease, transform 0.15s ease, border-color 0.15s ease;
+
+  h3 {
+    font-size: 1.02rem;
+    line-height: 1.35;
+    margin: 0 0 0.4rem 0;
+    color: $text;
+  }
+
+  p {
+    font-size: 0.92rem;
+    margin: 0;
+    color: $muted;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background: $card-bg-dark;
+    border-color: $border-dark;
+
+    h3 {
+      color: $text-dark;
+    }
+
+    p {
+      color: $muted-dark;
+    }
+  }
+}
+
+a.card:hover {
+  color: inherit;
+  text-decoration: none;
+  border-color: $accent;
+  box-shadow: 0 6px 16px rgba(15, 41, 66, 0.12);
+  transform: translateY(-2px);
+}
+
+.card__badge {
+  align-self: flex-start;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: $blue;
+  background: $badge-bg;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  margin-bottom: 0.55rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: $text-dark;
+    background: $badge-bg-dark;
+  }
+}
+
+.card__meta {
+  font-size: 0.85rem;
+  color: $muted;
+  margin-top: auto;
+  padding-top: 0.5rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: $muted-dark;
+  }
+}
+
+.card__links {
+  margin-top: auto;
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
+
+  a {
+    margin-right: 0.8rem;
+    white-space: nowrap;
+  }
+}

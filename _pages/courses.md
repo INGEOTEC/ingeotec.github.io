@@ -1,45 +1,14 @@
 ---
-title:
+title: Courses
 layout: default
 permalink: /courses/
 published: true
 ---
 
-
-<div class="ProjectContainer">
-
-	<div class="gallery">
-
-
-  {% for project in site.courses %}
-
-  {% if project.redirect %}
-  <div class="projectTile">
-          <a href="{{ project.redirect }}" target="_blank">
-          <span>
-              <h2>{{ project.title }}</h2>
-              <br/>
-              <p>{{ project.description }}</p>
-          </span>
-          </a>
-  </div>
-
-  {% else %}
-
-  <div class="projectTile">
-          <a href="{{ project.url | prepend: site.baseurl | prepend: site.url }}">
-          <span>
-              <h2>{{ project.title }}</h2>
-              <br/>
-              <p>{{ project.description }}</p>
-          </span>
-          </a>
-  </div>
-
-  {% endif %}
-
-  {% endfor %}
-
-	</div>
-
+<div class="section-title">
+  <span class="section-tag">Teaching</span>
+  <h2>Courses</h2>
 </div>
+<p class="section-desc">Course material written by members of the group on machine learning, natural language processing, algorithms and information retrieval.</p>
+
+{% include card-grid.html items=site.courses %}
