@@ -31,3 +31,8 @@ gem "github-pages", group: :jekyll_plugins
 
 
 gem "webrick", "~> 1.7"
+
+# Ruby 3.4 no longer bundles these; Jekyll 3.9 (github-pages) needs them.
+gem "csv"
+gem "base64"
+gem "bigdecimal"
