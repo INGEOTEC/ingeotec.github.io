@@ -34,6 +34,16 @@ if sed -n '/<head>/,/<\/head>/p' "$SITE/index.html" | grep -qE '<h[1-6]'; then
   fail "heading inside <head> of $SITE/index.html"
 fi
 
+# Favicons exist and are linked with absolute paths (review fix-1, added after
+# issues #5/#6: the old include used relative hrefs to files that never existed).
+for f in apple-touch-icon.png favicon-32x32.png favicon-16x16.png; do
+  test -s "$SITE/assets/images/$f" || fail "missing $SITE/assets/images/$f"
+done
+for p in index.html software/index.html courses/index.html talk/index.html; do
+  [ "$(grep -c 'href="/assets/images/favicon-32x32.png"' "$SITE/$p")" -eq 1 ] \
+    || fail "favicon link missing in $SITE/$p"
+done
+
 # Number of cards on each collection page.
 count() { grep -o 'class="card"' "$SITE/$1/index.html" | wc -l | tr -d ' '; }
 for pc in talk:16 courses:5 software:12; do
