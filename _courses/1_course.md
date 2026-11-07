@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Aprendizaje Computacional
-description: Conocer las características de problemas de aprendizaje supervisado y no supervisado.
-redirect: https://ingeotec.github.io/AprendizajeComputacional/
+description: Supervised and unsupervised learning problems, their characteristics and the algorithms that solve them.
+redirect: "https://ingeotec.github.io/AprendizajeComputacional/"
+badge: Spanish
 ---

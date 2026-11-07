@@ -2,6 +2,9 @@
 layout: post
 title: SimilaritySearch.jl
 description: An approximate nearest neighbor package
+category: similaritysearch
+github: https://github.com/sadit/SimilaritySearch.jl
+meta: Julia
 ---
 
 SimilaritySearch.jl is a library for nearest neighbor search. In particular, it contains the implementation for SearchGraph, a fast and flexible search index using any metric function. It is designed to support multithreading in most of its functions and structures.

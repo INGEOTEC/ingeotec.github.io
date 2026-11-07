@@ -2,6 +2,9 @@
 layout: post
 title: TextSearch.jl
 description: BM25 inverted file and sparse text representation package
+category: similaritysearch
+github: https://github.com/sadit/TextSearch.jl
+meta: Julia
 ---
 
 Julia package to create vector representations of text and seach them, mostly, independently of the language.

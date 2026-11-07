@@ -9,7 +9,7 @@ links:
 published: true
 ---
 
-This site is organized into three sections: [Software]({{ site.baseurl }}/software/) lists the open-source libraries developed by the group, [Courses]({{ site.baseurl }}/courses/) collects the course material written by its members, and [Talks]({{ site.baseurl }}/talk/) gathers the presentations given at conferences, competitions and outreach events.
+This site is organized into three sections. [Software]({{ site.baseurl }}/software/) lists the open-source libraries developed by the group, grouped into four research lines: [Legal Text Analytics]({{ site.baseurl }}/software/#legalia), [Statistical Comparison of Algorithms]({{ site.baseurl }}/software/#compstats), [Text Classification]({{ site.baseurl }}/software/#textclassification) and [Similarity Search]({{ site.baseurl }}/software/#similaritysearch). [Courses]({{ site.baseurl }}/courses/) collects the course material written by its members, and [Talks]({{ site.baseurl }}/talk/) gathers the presentations given at conferences, competitions and outreach events.
 
 <div class="section-title">
   <span class="section-tag">People</span>

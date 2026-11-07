@@ -34,4 +34,22 @@ if sed -n '/<head>/,/<\/head>/p' "$SITE/index.html" | grep -qE '<h[1-6]'; then
   fail "heading inside <head> of $SITE/index.html"
 fi
 
+# Number of cards on each collection page.
+count() { grep -o 'class="card"' "$SITE/$1/index.html" | wc -l | tr -d ' '; }
+for pc in talk:16 courses:5 software:12; do
+  page=${pc%%:*}; want=${pc##*:}; got=$(count "$page")
+  [ "$got" -eq "$want" ] || fail "/$page/ has $got cards, expected $want"
+done
+
+# Every external URL in the collections returns HTTP 200 (needs network).
+if [ "${CHECK_LINKS:-0}" = "1" ]; then
+  bad=0
+  for u in $(grep -rhoE 'https?://[^ "<>)]+' _talk _courses _software | sort -u); do
+    code=$(curl -s -o /dev/null -w '%{http_code}' -L --max-time 30 "$u")
+    if [ "$code" != "200" ]; then echo "$code $u" >&2; bad=1; fi
+  done
+  [ "$bad" -eq 0 ] || fail "broken external links"
+  echo "OK: all external links return 200"
+fi
+
 echo "OK: site checks passed"

@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Recuperación de información en Julia 
-description: Curso sobre recuperación de información en Julia
-redirect: https://github.com/sadit/IR-2022/
+title: Análisis de Algoritmos
+description: Course on the analysis of algorithms with a focus on information retrieval.
+redirect: "https://github.com/sadit/CURSO-ALGO-IR/"
+badge: Spanish
 ---

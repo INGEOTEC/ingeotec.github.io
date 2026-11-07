@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Natural Language Processing
-description: Introduce the students to the field of Natural Language Processing.
-redirect: https://ingeotec.github.io/NLP-Course/
+title: Procesamiento de Lenguaje Natural
+description: An open textbook on natural language processing, from text representations to text classification.
+redirect: "https://ingeotec.github.io/PLN/"
+badge: Spanish
 ---

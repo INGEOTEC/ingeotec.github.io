@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Análisis de Algoritmos 
-description: Curso sobre análisis de algoritmos con un enfoque hacia la recuperación de información
-redirect: https://github.com/sadit/CURSO-ALGO-IR/
+title: Natural Language Processing
+description: Introduce the students to the field of Natural Language Processing.
+redirect: "https://ingeotec.github.io/NLP-Course/"
+badge: English
 ---
