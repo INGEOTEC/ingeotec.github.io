@@ -1,12 +1,15 @@
 {% comment %}
   Renders a collection as a card grid: {% include card-grid.html items=site.software %}
-  Each item links to `redirect` (external) or to its own page, and shows
-  `title`, `description` and, when present, `badge` and `meta`.
+  Each item links to `link` or `redirect` (external) or to its own page, and
+  shows `title`, `description` and, when present, `badge` and `meta`.
+  `link` is the key used by the data files _data/talks.yml and
+  _data/courses.yml (review fix-2); `url` cannot be used for it because
+  collection items already have a `url` (their own page).
 {% endcomment %}
 <div class="card-grid">
   {% for item in include.items %}
-  {% if item.redirect %}
-  <a class="card" href="{{ item.redirect }}" target="_blank" rel="noopener">
+  {% if item.redirect or item.link %}
+  <a class="card" href="{{ item.link | default: item.redirect }}" target="_blank" rel="noopener">
   {% else %}
   <a class="card" href="{{ item.url | prepend: site.baseurl }}">
   {% endif %}

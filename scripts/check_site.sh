@@ -51,10 +51,19 @@ for pc in talk:16 courses:5 software:12; do
   [ "$got" -eq "$want" ] || fail "/$page/ has $got cards, expected $want"
 done
 
-# Every external URL in the collections returns HTTP 200 (needs network).
+# Talks and courses come from _data/ and get no page of their own; the Talks
+# page does not point at the talks repository's index, only at the decks
+# (review fix-2, added after issues #5/#6).
+test ! -e "$SITE/talk/01_talk" || fail "$SITE/talk/01_talk still exists"
+test ! -e "$SITE/courses/1_course" || fail "$SITE/courses/1_course still exists"
+if grep -q 'href="https://ingeotec.github.io/talks/"' "$SITE/talk/index.html"; then
+  fail "$SITE/talk/index.html links to the talks index"
+fi
+
+# Every external URL in the data files and software returns HTTP 200 (needs network).
 if [ "${CHECK_LINKS:-0}" = "1" ]; then
   bad=0
-  for u in $(grep -rhoE 'https?://[^ "<>)]+' _talk _courses _software | sort -u); do
+  for u in $(grep -rhoE 'https?://[^ "<>)]+' _data/talks.yml _data/courses.yml _software | sort -u); do
     code=$(curl -s -o /dev/null -w '%{http_code}' -L --max-time 30 "$u")
     if [ "$code" != "200" ]; then echo "$code $u" >&2; bad=1; fi
   done

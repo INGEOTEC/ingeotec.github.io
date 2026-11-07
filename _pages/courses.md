@@ -11,4 +11,4 @@ published: true
 </div>
 <p class="section-desc">Course material written by members of the group on machine learning, natural language processing, algorithms and information retrieval.</p>
 
-{% include card-grid.html items=site.courses %}
+{% include card-grid.html items=site.data.courses %}

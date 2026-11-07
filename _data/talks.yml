@@ -1,0 +1,102 @@
+# Talks shown on /talk/. To add a talk, append an entry to the `talks` list
+# of the right section (or add a section). Keys: title (required), link
+# (required, the published slides), description (one English line),
+# badge (short label shown above the title, e.g. the venue), meta (optional
+# line under the description, e.g. "10-minute version"). Order on the page
+# is the order in this file.
+# Each section has key (the anchor id), tag (small label above the header),
+# title and description.
+- key: outreach
+  tag: Outreach
+  title: Outreach
+  description: Outreach talks on Natural Language Processing, Artificial Intelligence and their applications, aimed at general audiences.
+  talks:
+    - title: Impacto del Procesamiento de Lenguaje Natural en la Educación
+      link: https://ingeotec.github.io/talks/TextClassification/educacion.html
+      description: Outreach talk on how natural language processing can transform education and teaching. (Talk in Spanish.)
+      badge: Divulgación
+    - title: Competencias internacionales para generar avances en inteligencia artificial
+      link: https://ingeotec.github.io/talks/TextClassification/competencias.html
+      description: Outreach talk on how international competitions drive advances in artificial intelligence. (Talk in Spanish.)
+      badge: Divulgación
+    - title: Innovación en Reclutamiento y Marketing mediante PLN
+      link: https://ingeotec.github.io/talks/TextClassification/reclutamiento.html
+      description: Outreach talk on how natural language processing is driving innovation in recruitment and marketing. (Talk in Spanish.)
+      badge: Divulgación
+    - title: El Procesamiento de Lenguaje Natural en la Ciencia de Datos
+      link: https://ingeotec.github.io/talks/TextClassification/ciencia_datos.html
+      description: Outreach talk on the role of natural language processing within data science. (Talk in Spanish.)
+      badge: Divulgación
+    - title: Is Traditional Machine Learning Useless?
+      link: https://ingeotec.github.io/talks/TextClassification/ropec2024.html
+      description: Outreach talk on the relevance of traditional computational learning versus the rise of deep learning.
+      badge: ROPEC 2024
+      meta: Given the Boom of Deep Learning Approaches
+    - title: "¿Qué tan cerca están nuestras leyes? Explorando el derecho mexicano con inteligencia artificial"
+      link: https://ingeotec.github.io/talks/LegalIA/index.html
+      description: Outreach talk on exploring Mexican law with artificial intelligence. (Talk in Spanish.)
+      badge: LegalIA
+      meta: "LegalIA: corpus abiertos y un atlas de la legislación federal"
+    - title: Clasificación de Texto y Análisis de Sentimientos
+      link: https://ingeotec.github.io/talks/TextClassification/sentimientos.html
+      description: Outreach talk introducing text classification and sentiment analysis to a general audience. (Talk in Spanish.)
+      badge: Divulgación
+
+- key: textclassification
+  tag: Course
+  title: Text Classification
+  description: Technical talks and courses on text classification and opinion mining, aimed at academic audiences.
+  talks:
+    - title: Text Classification
+      link: https://ingeotec.github.io/talks/TextClassification/general.html
+      description: Introductory course on text classification and opinion mining for academic audiences.
+      badge: Curso
+    - title: Sentiment Analysis
+      link: https://ingeotec.github.io/talks/TextClassification/poornima.html
+      description: Course on sentiment analysis taught at the Poornima Institute of Engineering & Technology.
+      badge: Poornima Institute
+    - title: Algoritmos Evolutivos en problemas de Procesamiento de Lenguaje Natural y Minería de Opinión
+      link: https://ingeotec.github.io/talks/TextClassification/quantum.html
+      description: Outreach talk on evolutionary algorithms applied to natural language processing and opinion mining problems. (Talk in Spanish.)
+      badge: Quantum
+
+- key: metricsearch
+  tag: Research line
+  title: Metric Search
+  description: Search in metric spaces.
+  talks:
+    - title: Búsqueda en espacios métricos en la era de los grandes modelos neuronales
+      link: https://ingeotec.github.io/talks/MetricSearch/index.html
+      description: Metric-space search and nearest-neighbour indexes in the era of large neural models. (Talk in Spanish.)
+      badge: Metric Search
+
+- key: competitions
+  tag: Competition
+  title: Competitions
+  description: "INGEOTEC's participation in international evaluation campaigns of NLP systems: IberLEF 2023 (Jaén, Spain) and MexLEF 2023 (Puebla, Mexico)."
+  talks:
+    - title: "Ingeotec at Rest-Mex: Bag-of-Words Classifiers"
+      link: https://ingeotec.github.io/talks/IberLEF2023/restMex2023.html
+      description: "INGEOTEC's bag-of-words classifiers for the Rest-Mex 2023 tasks on Mexican tourism texts at IberLEF 2023."
+      badge: Rest-Mex · IberLEF 2023
+      meta: Versión completa
+    - title: "Ingeotec at Rest-Mex: Bag-of-Words Classifiers"
+      link: https://ingeotec.github.io/talks/IberLEF2023/RestMex2023-10mins.html
+      description: "Ten-minute version of INGEOTEC's Rest-Mex 2023 presentation at IberLEF 2023."
+      badge: Rest-Mex · IberLEF 2023
+      meta: Versión de 10 minutos
+    - title: "Ingeotec at DA-VINCIS: Bag-of-Words Classifiers"
+      link: https://ingeotec.github.io/talks/IberLEF2023/davincis2023.html
+      description: "INGEOTEC's bag-of-words classifiers for detecting violent incidents in social media in the DA-VINCIS task at IberLEF 2023."
+      badge: DA-VINCIS · IberLEF 2023
+      meta: Versión completa
+    - title: "Ingeotec at DA-VINCIS: Bag-of-Words Classifiers"
+      link: https://ingeotec.github.io/talks/IberLEF2023/short-davincis2023.html
+      description: "Ten-minute version of INGEOTEC's DA-VINCIS presentation at IberLEF 2023."
+      badge: DA-VINCIS · IberLEF 2023
+      meta: Versión de 10 minutos
+    - title: Recursos regionalizados para el procesamiento automático de datos de redes sociales
+      link: https://ingeotec.github.io/talks/MexLEF2023/index.html
+      description: Regionalized language resources for the automatic processing of social media data, presented at MexLEF 2023. (Talk in Spanish.)
+      badge: MexLEF 2023
+      meta: MexLEF, Puebla, México — octubre 2023

@@ -1,0 +1,25 @@
+# Courses shown on /courses/. To add a course, append an entry to this list.
+# Keys: title (required), link (required, the course material), description
+# (one English line), badge (short label shown above the title, here the
+# language the course is taught in), meta (optional line under the
+# description). Order on the page is the order in this file.
+- title: Aprendizaje Computacional
+  link: https://ingeotec.github.io/AprendizajeComputacional/
+  description: Supervised and unsupervised learning problems, their characteristics and the algorithms that solve them.
+  badge: Spanish
+- title: Procesamiento de Lenguaje Natural
+  link: https://ingeotec.github.io/PLN/
+  description: An open textbook on natural language processing, from text representations to text classification.
+  badge: Spanish
+- title: Natural Language Processing
+  link: https://ingeotec.github.io/NLP-Course/
+  description: Introduce the students to the field of Natural Language Processing.
+  badge: English
+- title: Análisis de Algoritmos
+  link: https://github.com/sadit/CURSO-ALGO-IR/
+  description: Course on the analysis of algorithms with a focus on information retrieval.
+  badge: Spanish
+- title: Recuperación de información en Julia
+  link: https://github.com/sadit/IR-2022/
+  description: Course on information retrieval using the Julia language.
+  badge: Spanish

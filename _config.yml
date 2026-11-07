@@ -56,13 +56,8 @@ collections:
   software:
     output: true
     permalink: /software/:path/
-  courses:
-    output: true
-    permalink: /courses/:path/
-  talk:
-    output: true
-    permalink: /talk/:path/
-  
+# Talks and courses are data files: _data/talks.yml and _data/courses.yml.
+
 
 sass:
   sass_dir: /assets/css/_sass
