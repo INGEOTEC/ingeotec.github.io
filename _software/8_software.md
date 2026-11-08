@@ -2,6 +2,9 @@
 layout: post
 title: SimSearchManifoldLearning.jl
 description: Connects SimilaritySearch with manifold Learning and also provides a high-performance UMAP method.
+category: similaritysearch
+github: https://github.com/sadit/SimSearchManifoldLearning.jl
+meta: Julia
 ---
 
 A package that implements the UMAP algorithm for computing non-linear dimensional projections. It uses the SimilaritySearch package for speeding up the construction of the 

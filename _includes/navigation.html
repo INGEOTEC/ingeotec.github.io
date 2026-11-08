@@ -1,9 +1,9 @@
-<div class="links scroll">
-        <a href="{{site.baseurl}}/">Home</a>
-        <!--<a href="{{site.baseurl}}/projects/">Research</a>-->
-        <a href="{{site.baseurl}}/software/">Software</a>        
-        <a href="{{site.baseurl}}/courses/">Courses</a>
-        <a href="{{site.baseurl}}/talk/">Talks</a>
-        <!--<a href="{{site.baseurl}}/blog/">Blog</a>
-        <a href="{{site.baseurl}}/archive/">Archive</a>-->
-</div>
+<nav class="site-nav__inner">
+    <a class="site-nav__title" href="{{site.baseurl}}/">{{ site.title }}</a>
+    <div class="site-nav__links">
+        <a href="{{site.baseurl}}/"{% if page.url == "/" %} class="active"{% endif %}>Home</a>
+        <a href="{{site.baseurl}}/software/"{% if page.url contains "/software/" %} class="active"{% endif %}>Software</a>
+        <a href="{{site.baseurl}}/courses/"{% if page.url contains "/courses/" %} class="active"{% endif %}>Courses</a>
+        <a href="{{site.baseurl}}/talk/"{% if page.url contains "/talk/" %} class="active"{% endif %}>Talks</a>
+    </div>
+</nav>

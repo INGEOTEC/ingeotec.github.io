@@ -2,17 +2,12 @@
 # layout: compress
 ---
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
-
-        <h1 class="post-headline">{{site.title}}</h1>
-        <h3 class="post-description">{{site.description}}</h3>
-
-        {% include navigation.html %}
 
         {% seo %}
 
@@ -27,23 +22,18 @@
     </head>
 
     <body>
-        <main>
-            <article>
-                {{ content }}
-            </article>
+        <header class="site-nav">
+            {% include navigation.html %}
+        </header>
+
+        <main class="container">
+            {{ content }}
         </main>
 
-        <footer>
-          <p class="copy">
-            <small> &copy; {{site.title}} {{ site.time | date: '%Y' }}
-                    | Powered by Jekyll and
-                    <a target="_blank" href="https://github.com/jitinnair1/gradfolio/">Gradfolio</a>.
-                    Last updated on {{ site.time | date_to_long_string }}
-            </small>
-          </p>
+        <footer class="site-footer">
+            <p class="copy">&copy; {{ site.title }} {{ site.time | date: '%Y' }}</p>
 
-        {% include social-footer.html %}
-
+            {% include social-footer.html %}
         </footer>
 
         {% include analytics.html %}

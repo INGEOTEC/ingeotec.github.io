@@ -2,6 +2,9 @@
 layout: post
 title: EvoMSA
 description: Sentiment Analysis System based on B4MSA and EvoDAG
+category: textclassification
+github: https://github.com/INGEOTEC/EvoMSA
+meta: Python
 ---
 
 EvoMSA is a Sentiment Analysis System based on B4MSA and [EvoDAG](https://github.com/mgraffg/EvoDAG). EvoMSA is a stack generalisation algorithm specialised on text classification problems. It works by combining the output of different text models to produce the final prediction.

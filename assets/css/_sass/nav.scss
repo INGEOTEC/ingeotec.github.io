@@ -1,0 +1,45 @@
+/* Top navigation bar */
+.site-nav {
+  background: $navy;
+  color: $hero-text;
+
+  .site-nav__inner {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0.7rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4rem 1rem;
+  }
+
+  .site-nav__title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .site-nav__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+  }
+
+  .site-nav__links a {
+    color: $hero-lead;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: background 0.15s ease;
+
+    &:hover,
+    &.active {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.14);
+    }
+  }
+}

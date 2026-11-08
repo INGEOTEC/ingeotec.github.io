@@ -2,6 +2,9 @@
 layout: post
 title: B4MSA
 description: A Baseline for Multilingual Sentiment Analysis
+category: textclassification
+github: https://github.com/INGEOTEC/b4msa
+meta: Python
 ---
 
 b4msa is multilingual framework, that can be served as a baseline for sentiment analysis classifiers, as well as a starting point to build new sentiment analysis systems.

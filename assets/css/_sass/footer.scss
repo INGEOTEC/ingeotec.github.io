@@ -1,16 +1,18 @@
 /* Footer */
-footer {
-    clear: both;
-    margin-top: 2em;
-}
+.site-footer {
+  border-top: 2px solid $border;
+  margin-top: 2rem;
+  padding: 1.2rem 1rem 2rem 1rem;
+  text-align: center;
+  color: $muted;
+  font-size: 0.9rem;
 
-/* Footer navigation links */
-.links a {
-    margin-right: 1em;
-}
+  .copy {
+    margin: 0 0 0.6rem 0;
+  }
 
-/* Footer copyrights */
-.copy {
-    color: #aaa;
-    text-align: center;
+  @media (prefers-color-scheme: dark) {
+    border-color: $border-dark;
+    color: $muted-dark;
+  }
 }
