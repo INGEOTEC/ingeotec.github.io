@@ -9,13 +9,11 @@ links:
 published: true
 ---
 
-This site is organized into three sections. [Software]({{ site.baseurl }}/software/) lists the open-source libraries developed by the group, grouped into four research lines: [Legal Text Analytics]({{ site.baseurl }}/software/#legalia), [Statistical Comparison of Algorithms]({{ site.baseurl }}/software/#compstats), [Text Classification]({{ site.baseurl }}/software/#textclassification) and [Similarity Search]({{ site.baseurl }}/software/#similaritysearch). [Courses]({{ site.baseurl }}/courses/) collects the course material written by its members, and [Talks]({{ site.baseurl }}/talk/) gathers the presentations given at conferences, competitions and outreach events.
-
 <div class="section-title">
   <span class="section-tag">People</span>
   <h2>Members</h2>
 </div>
-<p class="section-desc">INGEOTEC was formed in late 2014 as an interdisciplinary collaboration. Its founding members are:</p>
+<p class="section-desc">In late 2014, researchers from <a href="http://www.centrogeo.org.mx" target="_blank" rel="noopener">CentroGEO</a> and <a href="http://infotec.mx" target="_blank" rel="noopener">INFOTEC</a> decided to work on interdisciplinary projects; this collaboration was framed under the INGEOTEC name. The founding members are:</p>
 
 <div class="card-grid">
   <div class="card">
@@ -58,3 +56,5 @@ This site is organized into three sections. [Software]({{ site.baseurl }}/softwa
     </p>
   </div>
 </div>
+
+<p class="section-desc">As expected, during this period, some of the founding members moved to other institutions and campuses; Elio Villaseñor is working at <a href="https://inegi.org.mx/" target="_blank" rel="noopener">INEGI</a>, and Oscar S. Siordia is now at CentroGEO campus Mérida.</p>
